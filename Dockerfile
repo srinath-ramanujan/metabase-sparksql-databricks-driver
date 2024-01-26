@@ -46,7 +46,7 @@ FROM scratch as stg_export
 COPY --from=stg_build /build/driver/target/sparksql-databricks.metabase-driver.jar /
 
 # Now we can run Metabase with our built driver
-FROM metabase/metabase:${METABASE_VERSION} AS stg_runner
+FROM metabase/metabase-enterprise:${METABASE_VERSION} AS stg_runner
 
 # A metabase user/group is manually added in https://github.com/metabase/metabase/blob/master/bin/docker/run_metabase.sh
 # Make the UID and GID match
