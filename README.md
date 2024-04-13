@@ -7,7 +7,7 @@
 To build a dockerized Metabase including the Databricks driver from this repository, simply run:
 
 ```
-docker build -t metabase:1.48.6-db -f Dockerfile .
+docker build -t metabase:1.49.5-db -f Dockerfile .
 ```
 
 The Metabase Databricks driver gets build and included in a final Metabase docker image.
