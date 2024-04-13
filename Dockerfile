@@ -54,4 +54,4 @@ COPY --chown=2000:2000 --from=stg_build \
     /build/driver/target/sparksql-databricks.metabase-driver.jar \
     /plugins/sparksql-databricks.metabase-driver.jar
 
-RUN curl -LO --output-dir /plugins/ https://github.com/ClickHouse/metabase-clickhouse-driver/releases/download/1.3.4/clickhouse.metabase-driver.jar && chown 2000:2000 /plugins/clickhouse.metabase-driver.jar
+RUN curl -LO --output-dir /plugins/ https://github.com/ClickHouse/metabase-clickhouse-driver/releases/download/1.4.0/clickhouse.metabase-driver.jar && chown 2000:2000 /plugins/clickhouse.metabase-driver.jar
